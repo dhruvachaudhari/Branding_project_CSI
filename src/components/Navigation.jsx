@@ -1,15 +1,16 @@
-// import '../styles/nav.css';
+import '../styles/nav.css';
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link, Route } from 'react-router-dom';
+import contact from './Contact.jsx'
 
 const Navigation = () => {
   return (
-    <nav className="bg-black ">
+    <nav className="container">
       <div className="logo">
         <img src="/images/brand_logo.png" alt="logo" />
       </div>
       <ul>
-        <li className='font-bold'>
+        <li >
           <Link to="/">Menu</Link>
         </li>
         <li>
@@ -24,7 +25,9 @@ const Navigation = () => {
       </ul>
 
       <button>login</button>
+
     </nav>
+
   );
 };
 
